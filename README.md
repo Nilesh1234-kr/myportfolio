@@ -40,7 +40,7 @@ portfolio/
 ## Live Preview
 
 You can view the live website here:  
-**(Add your live link after deployment)**
+**(will be updated)**
 
 ---
 
