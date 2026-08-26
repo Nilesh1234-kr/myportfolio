@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nilesh Kumar | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/nklogo.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!--  Navbar  -->
+    <header class="navbar">
+      <div class="nav-container">
+        <a href="#home" class="logo">Nilesh Kumar</a> 
+
+        <!-- Hamburger Icon for Mobile -->
+        <div class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <nav>
+          <ul class="nav-menu" id="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li> 
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark/Light Mode">
+                <i class="fas fa-moon"></i>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header> 
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <!-- 3D Animated Background Canvas -->
+      <canvas id="hero-canvas"></canvas> 
+      
+      <div class="hero-container">
+        <!-- Hero Text -->
+        <div class="hero-text reveal">
+          <span class="welcome-text"><i class="fas fa-sparkles"></i> HELLO THERE, WELCOME TO MY PORTFOLIO</span>
+
+          <h1>
+            I'm a <br>
+            <span class="highlight typing-text" id="typing-text">Web Developer</span><span class="cursor">|</span>
+          </h1>
+
+          <p class="hero-tagline">
+            Computer Science & Engineering student specializing in Artificial Intelligence and Machine Learning. Passionate about building interactive web applications with clean code & modern designs.
+          </p>
+        </div>
+
+        <!-- Profile Card with Photo & Name Directly Underneath -->
+        <div class="hero-profile-card reveal">
+          <div class="hero-image-wrapper">
+            <img src="images\Nilesh_photo.jpeg" alt="Nilesh Kumar Profile Photo">
+          </div>
+          
+          <!-- Name & Tagline under photo -->
+          <div class="photo-name-container">
+            <h2 class="photo-name">Nilesh Kumar</h2>
+            <p class="photo-title"><i class="fas fa-graduation-cap"></i> AI & ML Student</p>
+          </div>
+
+          <!-- Download Resume & Contact Me Buttons -->
+          <div class="hero-buttons">
+            <a href="Nilesh_resume.pdf" target="_blank" class="btn primary">
+              <i class="fas fa-file-arrow-down"></i> Download Resume
+            </a>
+            <a href="#contact" class="btn outline">
+              <i class="fas fa-paper-plane"></i> Contact Me
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="about-container reveal">
+
+        <!-- Left Image Card -->
+        <div class="about-image-card">
+          <div class="about-image">
+            <img src="images\aboutme.webp" alt="Nilesh Kumar About Image">
+          </div>
+          <div class="about-name-tag">
+            <h3>Nilesh Kumar</h3>
+            <span>Full-Stack & AI Enthusiast</span>
+          </div>
+        </div>
+
+        <!-- Right Content -->
+        <div class="about-content">
+          <h2 class="about-title">Computer Science Student</h2>
+
+          <p>
+            I am a Computer Science and Engineering student specializing in Artificial Intelligence and Machine Learning. I am passionate about learning new technologies and understanding how software systems work in real life.
+            I have a solid foundation in programming and enjoy writing clean, maintainable code. My core skills include Java, Python, and modern web development (HTML, CSS, JavaScript).
+          </p>
+          <p>
+            Currently, I am seeking internship or entry-level opportunities where I can apply my skills, collaborate with engineering teams, and solve challenging real-world problems.
+          </p>
+
+          <div class="about-socials">
+            <a href="https://github.com/Nilesh1234-kr" target="_blank" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+
+            <a href="https://linkedin.com/in/nilesh-kumar-b38956327" target="_blank" title="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+
+            <a href="mailto:kmrnilesh1357@gmail.com" title="Gmail">
+              <i class="fas fa-envelope"></i>
+            </a>
+
+            <a href="https://www.instagram.com/nilesh_kumar_07/" target="_blank" title="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://x.com/NileshKuma28739" target="_blank" title="Twitter">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+          </div>
+
+          <div class="btn-right">
+            <a href="about.html" target="_blank" class="view-more-btn">View More About Me <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <h2 class="section-title reveal">My Skills</h2>
+      <div class="skills-container reveal">
+        <!-- Left Content -->
+        <div class="skills-left">
+          <h3>My Technical Expertise</h3>
+          <p>
+            I have hands-on experience in frontend web development, programming languages, and AI/ML algorithms. I enjoy creating responsive user interfaces and building efficient software.
+          </p>
+          <a href="#projects" class="skills-btn">Explore Projects <i class="fas fa-arrow-down"></i></a>
+        </div>
+        
+        <!-- Right Content Skill Bars -->
+        <div class="skills-right">
+          <div class="skill-item">
+            <div class="skill-info">
+              <span><i class="fab fa-html5"></i> HTML5</span>
+              <span class="percent">95%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress html" data-width="95%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span><i class="fab fa-css3-alt"></i> CSS3 / Responsive Design</span>
+              <span class="percent">90%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress css" data-width="90%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span><i class="fab fa-js"></i> JavaScript</span>
+              <span class="percent">80%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress js" data-width="80%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span><i class="fab fa-python"></i> Python & AI/ML</span>
+              <span class="percent">85%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress python" data-width="85%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span><i class="fab fa-java"></i> Java</span>
+              <span class="percent">80%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress java" data-width="80%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span><i class="fas fa-code"></i> C Programming</span>
+              <span class="percent">91%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress c" data-width="91%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+      <h2 class="reveal">My Services</h2>
+
+      <div class="services-grid">
+
+          <div class="service-card reveal">
+              <div class="service-img-wrapper">
+                <img src="images\webdev.jpg" alt="Web Development">
+              </div>
+              <h3>Web Development</h3>
+              <p>
+                  Responsive, scalable, and modern websites using HTML, CSS, and JavaScript with interactive dynamic layouts.
+              </p>
+              <a href="#contact" class="service-btn">Get In Touch <i class="fas fa-chevron-right"></i></a>
+          </div>
+
+          <div class="service-card reveal">
+              <div class="service-img-wrapper">
+                <img src="images\frontend.jpg" alt="Frontend Design">
+              </div>
+              <h3>Frontend UI/UX Design</h3>
+              <p>
+                  User-friendly, visually captivating UI/UX interfaces crafted for seamless performance across all mobile and desktop devices.
+              </p>
+              <a href="#contact" class="service-btn">Get In Touch <i class="fas fa-chevron-right"></i></a>
+          </div>
+
+          <div class="service-card reveal">
+              <div class="service-img-wrapper">
+                <img src="images\aiml.jpg" alt="AI ML Projects">
+              </div>
+              <h3>AI & ML Solutions</h3>
+              <p>
+                  Intelligent computer vision and data classification systems built using Python and machine learning algorithms.
+              </p>
+              <a href="#contact" class="service-btn">Get In Touch <i class="fas fa-chevron-right"></i></a>
+          </div>
+
+          <div class="service-card reveal">
+              <div class="service-img-wrapper">
+                <img src="images\clone.png" alt="Website Cloning">
+              </div>
+              <h3>Website Cloning & UI Re-creation</h3>
+              <p>
+                  Pixel-perfect UI clones of complex modern web platforms (Amazon, E-commerce) with full responsive support.
+              </p>
+              <a href="#contact" class="service-btn">Get In Touch <i class="fas fa-chevron-right"></i></a>
+          </div>
+
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <h2 class="reveal">Featured Projects</h2>
+
+      <div class="projects-grid">
+
+          <div class="project-card reveal">
+            <a href="https://github.com/Nilesh1234-kr/PlantDiseaseClassification.git"
+               target="_blank"
+               class="github-icon"
+               aria-label="GitHub Repository">
+               <i class="fab fa-github"></i>
+             </a>
+              <div class="project-img-wrapper">
+                <img src="images\plant.jpg" alt="Plant Disease Detection">
+              </div>
+              <h3>Plant Disease Detection System</h3>
+              <p>
+                  Machine learning based computer vision system that detects plant diseases from leaf images with high accuracy.
+              </p>
+              <a href="https://github.com/Nilesh1234-kr/PlantDiseaseClassification.git" target="_blank" class="project-btn">
+                View Project <i class="fas fa-external-link-alt"></i>
+              </a>
+           </div>
+
+          <div class="project-card reveal">
+                <a href="https://github.com/Nilesh1234-kr/weatherapp.git"
+               target="_blank"
+               class="github-icon"
+               aria-label="GitHub Repository">
+               <i class="fab fa-github"></i>
+             </a>
+              <div class="project-img-wrapper">
+                <img src="images\weather.jpg" alt="Weather Predicting Website">
+              </div>
+              <h3>Weather Forecasting Web App</h3>
+              <p>
+                  A real-time weather prediction platform consuming REST APIs with location lookup, live temperatures, and dynamic background visuals.
+              </p>
+              <a href="https://github.com/Nilesh1234-kr/weatherapp.git" target="_blank" class="project-btn">
+                View Project <i class="fas fa-external-link-alt"></i>
+              </a>
+          </div>
+
+          <div class="project-card reveal">
+            <a href="https://github.com/Nilesh1234-kr/amazonclone.git"
+               target="_blank"
+               class="github-icon"
+               aria-label="GitHub Repository">
+               <i class="fab fa-github"></i>
+             </a>
+              <div class="project-img-wrapper">
+                <img src="images\amazon.jpg" alt="Amazon Clone">
+              </div>
+              <h3>Amazon E-Commerce UI Clone</h3>
+              <p>
+                  Detailed replica of Amazon's homepage and shopping cart interface featuring responsive product cards and header navigation.
+              </p>
+              <a href="https://github.com/Nilesh1234-kr/amazonclone.git" target="_blank" class="project-btn">
+                View Project <i class="fas fa-external-link-alt"></i>
+              </a>
+          </div>
+
+          <div class="project-card reveal">
+            <a href="https://github.com/Nilesh1234-kr"
+               target="_blank"
+               class="github-icon"
+               aria-label="GitHub Repository">
+               <i class="fab fa-github"></i>
+             </a>
+              <div class="project-img-wrapper">
+                <img src="images\ecommerce.jpg" alt="E-commerce Website">
+              </div>
+              <h3>Full-Featured E-Commerce Web App</h3>
+              <p>
+                  Modern online store front layout complete with product filters, item cards, shopping bag, and checkout page.
+              </p>
+              <a href="https://github.com/Nilesh1234-kr" target="_blank" class="project-btn">
+                View Project <i class="fas fa-external-link-alt"></i>
+              </a>
+          </div>
+
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section reveal">
+      <div class="cta-content">
+        <h2>Start Building Your Dream Project Today!</h2>
+        <p>
+          Looking for a web developer or AI enthusiast for your next project or team? Let's connect and build something awesome together!
+        </p>
+        <a href="#contact" class="cta-btn">
+          Get Started Now <span>→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="contact-container reveal">
+
+        <!-- Left Info -->
+        <div class="contact-info">
+          <h2>Get In Touch</h2>
+          <p>
+            Feel free to drop a message or reach out via email for inquiries, project proposals, or collaboration opportunities.
+          </p>
+
+          <div class="info-item">
+            <span class="info-icon"><i class="fas fa-envelope"></i></span>
+            <div>
+              <strong>Email</strong>
+              <p><a href="mailto:kmrnilesh1357@gmail.com">kmrnilesh1357@gmail.com</a></p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <span class="info-icon"><i class="fas fa-location-dot"></i></span>
+            <div>
+              <strong>Location</strong>
+              <p>Government Engineering College, Samastipur, Bihar, India</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <span class="info-icon"><i class="fas fa-phone"></i></span>
+            <div>
+              <strong>Phone</strong>
+              <p>+91 1234567890</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Form -->
+        <div class="contact-form">
+          <form id="contactForm" onsubmit="event.preventDefault();">
+            <div class="form-group">
+              <input type="text" id="contactName" placeholder="Your Name *" required />
+            </div>
+            <div class="form-group">
+              <input type="email" id="contactEmail" placeholder="Your Email *" required />
+            </div>
+            <div class="form-group">
+              <input type="text" id="contactSubject" placeholder="Subject" />
+            </div>
+            <div class="form-group">
+              <textarea id="contactMessage" placeholder="Your Message *" required></textarea>
+            </div>
+            <button type="submit" id="submitBtn" class="submit-btn">
+              <span>Send Message</span> <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-card">
+
+        <div class="footer-top">
+          <!-- Brand -->
+          <div class="footer-brand">
+            <div class="brand-logo">
+              <span class="logo-icon">NK</span>
+              <span class="logo-text">Nilesh Portfolio</span>
+            </div>
+
+            <p>
+              Crafting responsive web solutions & artificial intelligence applications with passion and precision.
+            </p>
+
+            <div class="social-icons">
+              <a href="https://github.com/Nilesh1234-kr" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://x.com/NileshKuma28739" target="_blank" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+              <a href="https://www.instagram.com/nilesh_kumar_07/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://linkedin.com/in/nilesh-kumar-b38956327" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="mailto:kmrnilesh1357@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+
+          <!-- Links -->
+          <div class="footer-links">
+            <div class="link-column">
+              <h4>Navigation</h4>
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#skills">Skills</a>
+              <a href="#services">Services</a>
+            </div>
+
+            <div class="link-column">
+              <h4>Portfolio</h4>
+              <a href="#projects">Projects</a>
+              <a href="#contact">Contact</a>
+              <a href="Nilesh_resume.pdf" target="_blank">Resume</a>
+            </div>
+
+            <div class="link-column">
+              <h4>Social</h4>
+              <a href="https://github.com/Nilesh1234-kr" target="_blank">GitHub</a>
+              <a href="https://linkedin.com/in/nilesh-kumar-b38956327" target="_blank">LinkedIn</a>
+              <a href="https://www.instagram.com/nilesh_kumar_07/" target="_blank">Instagram</a>
+            </div>
+          </div>
+
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+          <p>© 2026 Nilesh Kumar. All rights reserved.</p>
+          <div class="legal-links">
+            <a href="#home">Back to Top ↑</a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to Top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
